@@ -149,11 +149,15 @@ findit.find( inputPath ).on( 'file', function( fileName, stat ) {
         namesXML.ele( 'item' ).text( 'None' );
         valuesXML.ele( 'item' ).text( '' );
 
+        // Prevent duplicates, if one IM is there for multiple languages
+        var alreadyAdded = [];
+
         _.each( jQuery.ime.languages, function( value, key ) {
             _.each( value.inputmethods, function( imName ) {
-                if( _.contains( translitMethods, imName ) ) {
+                if( _.contains( translitMethods, imName )  && !_.contains( alreadyAdded, imName )) {
                     namesXML.ele( 'item' ).text( value.autonym + ' - ' + jQuery.ime.inputmethods[ imName ].name );
                     valuesXML.ele( 'item' ).text( imName );
+                    alreadyAdded.push( imName );
                 }
             } );
         } );
