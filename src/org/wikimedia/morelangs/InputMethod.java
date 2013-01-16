@@ -97,14 +97,72 @@ public class InputMethod  {
     public int getMaxKeyLength() {
         return maxKeyLength;
     }
-    
+
+    // Implementation of Matcher.replaceAll differs in Android and JDK
+    // In JDK, if a group has not been captured, it is replaced with ""
+    // In android, it is replaced with the string 'null'
+    // This is annoying. Can't really be fixed without fully encapsulating the class
+    // So, rewriting replaceAll algorithm
+    // So we'll just do backref replacement and pass it back to the original replaceAll
+    private String replaceAll(Matcher matcher, String input, String replacement) {
+        // Process substitution string to replace group references with groups
+        int cursor = 0;
+        StringBuilder result = new StringBuilder();
+
+        while (cursor < replacement.length()) {
+            char nextChar = replacement.charAt(cursor);
+            if (nextChar == '\\') {
+                cursor++;
+                nextChar = replacement.charAt(cursor);
+                result.append(nextChar);
+                cursor++;
+            } else if (nextChar == '$') {
+                // Skip past $
+                cursor++;
+                // The first number is always a group
+                int refNum = (int)replacement.charAt(cursor) - '0';
+                if ((refNum < 0)||(refNum > 9))
+                    throw new IllegalArgumentException(
+                            "Illegal group reference");
+                cursor++;
+
+                // Capture the largest legal group string
+                boolean done = false;
+                while (!done) {
+                    if (cursor >= replacement.length()) {
+                        break;
+                    }
+                    int nextDigit = replacement.charAt(cursor) - '0';
+                    if ((nextDigit < 0)||(nextDigit > 9)) { // not a number
+                        break;
+                    }
+                    int newRefNum = (refNum * 10) + nextDigit;
+                    if (matcher.groupCount() < newRefNum) {
+                        done = true;
+                    } else {
+                        refNum = newRefNum;
+                        cursor++;
+                    }
+                }
+                // Append group
+                if (matcher.group(refNum) != null)
+                    result.append(matcher.group(refNum));
+            } else {
+                result.append(nextChar);
+                cursor++;
+            }
+        }
+
+        return matcher.replaceAll(result.toString());
+    }
+
     public String transliterate(String input, String context, Boolean altGr) {
        for(InputPattern pattern: patterns) {
            Matcher inputMatcher = pattern.inputPattern.matcher(input);
           if(inputMatcher.find()) {
               if(pattern.contextPattern == null || pattern.contextPattern.matcher(context).find()) {
                   if(pattern.altGr == altGr) {
-                      return inputMatcher.replaceAll(pattern.replacement);
+                      return replaceAll(inputMatcher,  input, pattern.replacement);
                   }
               }
           }
