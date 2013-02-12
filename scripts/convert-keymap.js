@@ -33,7 +33,12 @@ var translitMethods = [
     'si-singlish',
     'ta-transliteration',
     'te-transliteration',
-    'eo-transliteration'
+    'eo-transliteration',
+    'as-phonetic',
+    'gu-hponetic',
+    'hi-phonetic',
+    'mr-phonetic',
+    'or-phonetic'
 ];
 
 /* TODO: Replace with proper options handling */
