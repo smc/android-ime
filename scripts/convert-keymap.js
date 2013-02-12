@@ -14,6 +14,8 @@ var translitMethods = [
     'mr-transliteration',
     'am-transliteration',
     'as-transliteration',
+    'bn-avro',
+    'bn-probhat',
     'as-avro',
     'as-bornona',
     'hi-transliteration',
@@ -141,13 +143,8 @@ findit.find( inputPath ).on( 'file', function( fileName, stat ) {
     fs.readFile( path.join( inputPath, '../src/jquery.ime.inputmethods.js' ), 'utf8', function( err, data ) {
         eval( data ); // See note about evail on file header
 
-        var resourcesXML = xmlbuilder.create('resources');
-        var namesXML = resourcesXML.ele( 'string-array', { name: 'transliterate_inputmethod_names' } );
-        var valuesXML = resourcesXML.ele( 'string-array', { name: 'transliterate_inputmethod_values' } );
-
-        // Add value to disable it
-        namesXML.ele( 'item' ).text( 'None' );
-        valuesXML.ele( 'item' ).text( '' );
+        var resourcesXML = xmlbuilder.create('input-method');
+        var stringXML = xmlbuilder.create('strings');
 
         // Prevent duplicates, if one IM is there for multiple languages
         var alreadyAdded = [];
@@ -155,8 +152,18 @@ findit.find( inputPath ).on( 'file', function( fileName, stat ) {
         _.each( jQuery.ime.languages, function( value, key ) {
             _.each( value.inputmethods, function( imName ) {
                 if( _.contains( translitMethods, imName )  && !_.contains( alreadyAdded, imName )) {
-                    namesXML.ele( 'item' ).text( value.autonym + ' - ' + jQuery.ime.inputmethods[ imName ].name );
-                    valuesXML.ele( 'item' ).text( imName );
+                    var displayName = 'keyboard_name_' + imName.replace( '-', '_' );
+                    var subTypeXML = resourcesXML.ele( 'subtype', {
+                        'android:icon': '@drawable/ic_subtype_keyboard',
+                        'android:label': '@string/' + displayName,
+                        'android:imeSubtypeLocale': key,
+                        'android:imeSubtypeMode': 'keyboard',
+                        'android:imeSubtypeExtraValue': 'KeyboardLayoutSet=qwerty,TransliterationMethod=' + imName
+                    } );
+                    stringXML.ele( 'string', { 
+                            'name': displayName
+                        }, value.autonym + ' - ' + jQuery.ime.sources[ imName ].name
+                    );
                     alreadyAdded.push( imName );
                 }
             } );
@@ -164,10 +171,9 @@ findit.find( inputPath ).on( 'file', function( fileName, stat ) {
         
 
         var xmlString = resourcesXML.end( { pretty: true } );
-        fs.writeFile( path.join( outputPath, 'transliteration.xml' ), xmlString, function( err ) {
-            if( err ) {
-                console.log( err );
-            }
-        } );
+        console.log( xmlString );
+
+        var stringString = stringXML.end( { pretty: true } );
+        console.log( stringString );
     } );
 } );
