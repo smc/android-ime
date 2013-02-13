@@ -38,7 +38,10 @@ var translitMethods = [
     'gu-hponetic',
     'hi-phonetic',
     'mr-phonetic',
-    'or-phonetic'
+    'or-phonetic',
+    'ur-transliteration',
+    'jv-transliteration',
+    'fi-transliteration'
 ];
 
 /* TODO: Replace with proper options handling */
@@ -149,7 +152,7 @@ findit.find( inputPath ).on( 'file', function( fileName, stat ) {
         eval( data ); // See note about evail on file header
 
         var resourcesXML = xmlbuilder.create('input-method');
-        var stringXML = xmlbuilder.create('strings');
+        var stringXML = xmlbuilder.create('resources');
 
         // Prevent duplicates, if one IM is there for multiple languages
         var alreadyAdded = [];

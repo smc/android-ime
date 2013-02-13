@@ -57,7 +57,7 @@
   <pattern input="k" replacement="о"/>
   <pattern input="l" replacement="л"/>
   <pattern input=";" replacement="д"/>
-  <pattern input="\\" replacement="п"/>
+  <pattern input="&apos;" replacement="п"/>
   <pattern input="z" replacement="я"/>
   <pattern input="x" replacement="ч"/>
   <pattern input="c" replacement="ё"/>
