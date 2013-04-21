@@ -21,36 +21,6 @@ import org.xml.sax.SAXException;
 @RunWith(Parameterized.class)
 public class TransliterateTests {
 
-    static int firstDivergence(String str1, String str2) {
-        int length = str1.length() > str2.length() ? str2.length() : str1.length();
-        for(int i = 0; i < length; i++) {
-            if(str1.charAt(i) != str2.charAt(i)) {
-                return i;
-            }
-        }
-        return length - 1; // Default
-    }
-    static String transliterateAll(InputMethod im, String input, ArrayList<Boolean> altGr) {
-        String curOutput = "";
-        String replacement;
-        String context = "";
-        for(int i=0; i < input.length(); i++) {
-            String c = String.valueOf(input.charAt(i)); 
-            int startPos = curOutput.length() > im.getMaxKeyLength() ? curOutput.length() - im.getMaxKeyLength() : 0;
-            String toReplace = curOutput.substring(startPos) + c;
-            replacement = im.transliterate(toReplace, context, altGr.get(i));
-            int divIndex = firstDivergence(toReplace, replacement);
-            replacement = replacement.substring(divIndex);
-            curOutput = curOutput.substring(0, startPos + divIndex)  + replacement;
-            
-            context += c;
-            if(context.length() > im.getContextLength()) {
-                context = context.substring(context.length() - im.getContextLength());
-            }
-        }
-        return curOutput;
-    }
-    
     @Parameters
     public static ArrayList<Object[]> data() throws SAXException, IOException, ParserConfigurationException {
         ArrayList<Object[]> data = new ArrayList<Object[]>();
@@ -109,7 +79,7 @@ public class TransliterateTests {
     
     @Test
     public void testTransliterate() throws FileNotFoundException, SAXException, IOException, ParserConfigurationException {
-        String output = transliterateAll(im, input, altGr);
+        String output = im.transliterateAll(input, altGr);
         assertEquals(expectedOutput, output);
     }
 

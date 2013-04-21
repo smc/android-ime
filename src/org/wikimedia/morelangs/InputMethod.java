@@ -169,7 +169,42 @@ public class InputMethod  {
        }
        return input;
     }
-    
+
+    public static int firstDivergence(String str1, String str2) {
+        int length = str1.length() > str2.length() ? str2.length() : str1.length();
+        for(int i = 0; i < length; i++) {
+            if(str1.charAt(i) != str2.charAt(i)) {
+                return i;
+            }
+        }
+        return length - 1; // Default
+    }
+
+    public String transliterateAll(String input, ArrayList<Boolean> altGr) {
+        String curOutput = "";
+        String replacement;
+        String context = "";
+        boolean curAltGr = false;
+        for(int i=0; i < input.length(); i++) {
+            String c = String.valueOf(input.charAt(i));
+            int startPos = curOutput.length() > this.getMaxKeyLength() ? curOutput.length() - this.getMaxKeyLength() : 0;
+            String toReplace = curOutput.substring(startPos) + c;
+            curAltGr = altGr != null && altGr.size() > i && altGr.get(i);
+            replacement = this.transliterate(toReplace, context, curAltGr);
+            int divIndex = InputMethod.firstDivergence(toReplace, replacement);
+            replacement = replacement.substring(divIndex);
+            curOutput = curOutput.substring(0, startPos + divIndex)  + replacement;
+
+            context += c;
+            if(context.length() > this.getContextLength()) {
+                context = context.substring(context.length() - this.getContextLength());
+            }
+        }
+        return curOutput;
+    }
+
+
+
     public static InputMethod fromName(String name) throws IllegalArgumentException {
         InputStream stream = InputMethod.class.getClassLoader().getResourceAsStream("org/wikimedia/morelangs/res/" + name + ".xml");
             return fromFile(stream);
