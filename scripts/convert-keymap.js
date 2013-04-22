@@ -68,6 +68,85 @@ function attrsFromRules( rules ) {
     return attrs;
 }
 
+
+// FIXME: Not very robust or complete
+function reverseRules( rules ) {
+    function reverse_rule( rule ) {
+        function get_groups( regex ) {
+            var groups = [];
+
+            var inGroup = false;
+            var curGroup = "";
+            for( var i = 0; i < regex.length; i++ ) {
+                var c = regex[i];
+                if( c === '(' ) {
+                    inGroup = true;
+                }
+                if( inGroup ) {
+                    curGroup += c;
+                }
+                if( c === ')' ) {
+                    inGroup = false;
+                    groups.push( curGroup );
+                    curGroup = "";
+                }
+            }
+
+            return groups;
+        }
+
+        var src = rule[0];
+        var dest = rule.length === 2 ? rule[1] : rule[2];
+
+        if( dest.indexOf( '$' ) === -1 ) {
+            return [ dest, src ];
+        }
+
+        // First replace all the substitutions
+        var allGroups = get_groups( src );
+        for( var i = 0; i < allGroups.length; i++ ) {
+            var groupReplacement = '$' + ( i + 1 );
+            var group = allGroups[ i ];
+            if( dest.indexOf( groupReplacement ) !== -1 ) {
+                src = src.replace( group, groupReplacement );
+                dest = dest.replace( groupReplacement, group );
+            }
+        }
+
+        var reverseRules = [];
+        // Now generate variants for the alternations
+        var alternationGroups = get_groups( src );
+        if( alternationGroups.length === 0 ) {
+            reverseRules = [ [ dest, src ] ];
+        } else {
+            _.each( alternationGroups, function( group ) {
+                // split by |
+                var groupParts = group.replace( '(', '' ).replace( ')', '' ).split( '|' );
+
+                _.each( groupParts, function( part ) {
+                    reverseRules.push( [ dest, src.replace( group, part ) ] );
+                } );
+
+            } );
+        }
+
+        return reverseRules;
+    }
+
+    var reversedRules = [];
+    _.each( rules.patterns, function( pattern ) {
+        reversedRules.concat( reverse_rule( pattern ) );
+    } );
+
+    return {
+        id: 'reverse-' + rules.id,
+        name: 'Reversed ' + rules.name,
+        contextLength: rules.contextLength,
+        maxKeyLength: rules.maxKeyLength,
+        patterns: reversedRules
+    };
+}
+
 function processRules( rules ) {
     /* Since some rules access and modify other ones */
     jQuery.ime.inputmethods[ rules.id ] = rules;
@@ -126,7 +205,12 @@ function processRules( rules ) {
 // Stub jQuery object, has the only method that we want
 var jQuery = {
     ime: {
-        register: processRules,
+        register: function( rules ) {
+            processRules( rules );
+            if( rules.id === 'ta-transliteration' ) {
+                processRules( reverseRules( rules ) );
+            }
+        },
         inputmethods: {},
         languages: {},
         sources: {}
