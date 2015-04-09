@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.wikimedia.morelangs">
+    package="org.smc.ime">
 
     <application android:allowBackup="true">
 

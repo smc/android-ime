@@ -1,18 +1,15 @@
-package org.wikimedia.morelangs;
+package org.smc.ime;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.util.Log;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
