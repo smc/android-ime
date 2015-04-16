@@ -327,6 +327,7 @@ public class InputMethod {
         put("ml-inscript", R.raw.ml_inscript);
         put("ml-inscript2", R.raw.ml_inscript2);
         put("ml-transliteration", R.raw.ml_transliteration);
+        put("ml-swanalekha", R.raw.ml_swanalekha);
         put("mn-cyrl", R.raw.mn_cyrl);
         put("mr-inscript", R.raw.mr_inscript);
         put("mr-inscript2", R.raw.mr_inscript2);
