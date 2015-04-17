@@ -36,7 +36,8 @@
   <pattern input="([ക-ഹ])ൃE" replacement="$1്രേ"/>
   <pattern input="([ക-ഹ])ൃo" replacement="$1്രൊ"/>
   <pattern input="([ക-ഹ])ൃO" replacement="$1്രോ"/>
-  <pattern input="([ക-ഹ])്(l|L)" replacement="$1്ല്"/>
+  <pattern input="([ക-ഹ])്l" replacement="$1്ല്"/>
+  <pattern input="([ക-ഹ])്L" replacement="$1്ള്"/>
   <pattern input="അa" replacement="ആ"/>
   <pattern input="അi" replacement="ഐ"/>
   <pattern input="അu" replacement="ഔ"/>
