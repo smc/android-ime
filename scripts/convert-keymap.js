@@ -223,7 +223,7 @@ var jQuery = {
     extend: _.extend
 };
 
-findit.find( inputPath ).on( 'file', function( fileName, stat ) {
+findit( inputPath ).on( 'file', function( fileName, stat ) {
     if( fileName.match( /\.js$/ ) ) {
         fs.readFile( fileName, 'utf8', function( err, data ) {
             console.log( "Reading " + fileName );
