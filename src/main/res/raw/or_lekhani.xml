@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <inputmethod id="or-lekhani" name="ଫୋନେଟିକ" description="Odia Lekhani phonetic input method" author="Junaid P V and Subhashish Panigrahi" version="1.0" contextLength="4" maxKeyLength="2">
-  <pattern input="\\([A-Za-z\>_~\.0-9])" context="\\" replacement="$1"/>
+  <pattern input="\\([A-Za-z\&gt;_~\.0-9])" context="\\" replacement="$1"/>
   <pattern input="([(କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍ଜ])a" replacement="$1ା"/>
   <pattern input="([କ-ଳଲନ୍ଧଥଡ଼ଢ଼ହୟୱରକ୍ଷଶସଷଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍ଜ])i" replacement="$1ି"/>
   <pattern input="([କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍])I" replacement="$1ୀ"/>
