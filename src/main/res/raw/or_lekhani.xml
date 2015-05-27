@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<inputmethod id="or-lekhani" name="Odia Lekhani" description="Odia Lekhani phonetic input method" author="Junaid P V and Subhashish Panigrahi" version="1.0" contextLength="4" maxKeyLength="2">
-  <pattern input="\\([A-Za-z\&gt;_~\.0-9])" context="\\" replacement="$1"/>
+<inputmethod id="or-lekhani" name="ଫୋନେଟିକ" description="Odia Lekhani phonetic input method" author="Junaid P V and Subhashish Panigrahi" version="1.0" contextLength="4" maxKeyLength="2">
+  <pattern input="\\([A-Za-z\>_~\.0-9])" context="\\" replacement="$1"/>
   <pattern input="([(କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍ଜ])a" replacement="$1ା"/>
   <pattern input="([କ-ଳଲନ୍ଧଥଡ଼ଢ଼ହୟୱରକ୍ଷଶସଷଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍ଜ])i" replacement="$1ି"/>
   <pattern input="([କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍])I" replacement="$1ୀ"/>
@@ -11,7 +11,6 @@
   <pattern input="([କ-ହୟୱ])୍ଳ୍l" replacement="$1ୢ"/>
   <pattern input="([କ-ହୟୱ])ୢl" replacement="$1ୣ"/>
   <pattern input="([କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍])e" replacement="$1େ"/>
-  <pattern input="([କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍])ାi" replacement="$1ୈ"/>
   <pattern input="([କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍])o" replacement="$1ୋ"/>
   <pattern input="([କ-ହୟୱଡ଼ଢ଼ଙ୍କଙ୍ଖଙ୍ଗଙ୍ଘଞ୍ଚଞ୍ଛଞ୍ଝଣ୍ଟଣ୍ଠଣ୍ଡଣ୍ଢନ୍ତନ୍ଥନ୍ଦନ୍ଧମ୍ପମ୍ଫମ୍ବମ୍ଭଞ୍])(ାu|ୋu)" replacement="$1ୌ"/>
   <pattern input="([କ-ହୟୱ])E" replacement="$1ୈ"/>
@@ -21,7 +20,7 @@
   <pattern input="z" replacement="୍"/>
   <pattern input="\." replacement="।"/>
   <pattern input="ଅa" replacement="ଆ"/>
-  <pattern input="(ଅi|ଏe)" replacement="ଐ"/>
+  <pattern input="ଏe" replacement="ଐ"/>
   <pattern input="(ଅu|ଓo|ଓO)" replacement="ଔ"/>
   <pattern input="ଋR" replacement="ୠ"/>
   <pattern input="ଳl" replacement="ଌ"/>
@@ -31,7 +30,7 @@
   <pattern input="ଙ୍କh" replacement="ଙ୍ଖ"/>
   <pattern input="ଙ୍ଗh" replacement="ଙ୍ଘ"/>
   <pattern input="ହm" replacement="ହ୍ମ"/>
-  <pattern input="(ହn|ନh)" replacement="ହ୍ନ"/>
+  <pattern input="ହn" replacement="ହ୍ନ"/>
   <pattern input="ମ୍ବh" replacement="ମ୍ଭ"/>
   <pattern input="ଣ୍ଡai" replacement="ଣ୍ଡାଇ"/>
   <pattern input="ଜ୍ଜh" replacement="ଜ୍ଝ"/>
@@ -49,21 +48,20 @@
   <pattern input="ନk" replacement="ଙ୍କ"/>
   <pattern input="ନd" replacement="ନ୍ଦ"/>
   <pattern input="ନD|ଣD" replacement="ଣ୍ଡ"/>
-  <pattern input="(ନDh|ଣDH|ଣDh)" replacement="ଣ୍ଢ"/>
+  <pattern input="ଣDh" replacement="ଣ୍ଢ"/>
   <pattern input="ନdh" replacement="ନ୍ଧ"/>
-  <pattern input="([କସପନ])t" replacement="$1୍ତ"/>
-  <pattern input="([ଷ])T" replacement="$1୍ଟ"/>
-  <pattern input="(ଟh|ଟH)" replacement="ଠ"/>
+  <pattern input="ଷT" replacement="$1୍ଟ"/>
+  <pattern input="ଟh" replacement="ଠ"/>
   <pattern input="ଡh" replacement="ଢ"/>
   <pattern input="ତh" replacement="ଥ"/>
   <pattern input="ଦh" replacement="ଧ"/>
   <pattern input="(f|ପh|P)" replacement="ଫ"/>
   <pattern input="ବh" replacement="ଭ"/>
   <pattern input="ସh" replacement="ଷ"/>
-  <pattern input="(ମb|ନb)" replacement="ମ୍ବ"/>
-  <pattern input="(ଣT|ନT)" replacement="ଣ୍ଟ"/>
-  <pattern input="(ଣTh|ଣTh|ନTh|ନTH)" replacement="ଣ୍ଠ"/>
-  <pattern input="([ସ|ଷ|ମ])p" replacement="$1୍ପ"/>
+  <pattern input="ମb" replacement="ମ୍ବ"/>
+  <pattern input="ଣT" replacement="ଣ୍ଟ"/>
+  <pattern input="ଣTh" replacement="ଣ୍ଠ"/>
+  <pattern input="(ଷ|ମ)p" replacement="$1୍ପ"/>
   <pattern input="shp" replacement="ଷ୍ପ"/>
   <pattern input="ଂM" replacement="ଁ"/>
   <pattern input="କk" replacement="କ୍କ"/>
@@ -76,7 +74,6 @@
   <pattern input="ତt" replacement="ତ୍ତ"/>
   <pattern input="ଲl" replacement="ଲ୍ଲ"/>
   <pattern input="ପp" replacement="ପ୍ପ"/>
-  <pattern input="\[" replacement="‌"/>
   <pattern input="_" replacement="‌"/>
   <pattern input="ଆ\\" replacement="ା"/>
   <pattern input="ଇ\\" replacement="ି"/>
