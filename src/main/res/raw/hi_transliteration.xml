@@ -15,7 +15,7 @@
   <pattern input="([क-ह]़?)्7" context="\~" replacement="$1्७"/>
   <pattern input="([क-ह]़?)्8" context="\~" replacement="$1्८"/>
   <pattern input="([क-ह]़?)्9" context="\~" replacement="$1्९"/>
-  <pattern input="([क-ह]़?)्\r" context="\~" replacement="$1्"/>
+  <pattern input="([क-ह]़?)्\r" context="\~" replacement="$1्&#xD;"/>
   <pattern input="([क-ह]़?)्0" replacement="$1०"/>
   <pattern input="([क-ह]़?)्1" replacement="$1१"/>
   <pattern input="([क-ह]़?)्2" replacement="$1२"/>
@@ -26,7 +26,7 @@
   <pattern input="([क-ह]़?)्7" replacement="$1७"/>
   <pattern input="([क-ह]़?)्8" replacement="$1८"/>
   <pattern input="([क-ह]़?)्9" replacement="$1९"/>
-  <pattern input="([क-ह]़?)्\r" replacement="$1"/>
+  <pattern input="([क-ह]़?)्\r" replacement="$1&#xD;"/>
   <pattern input="([क-ह]़?)्A" replacement="$1ा"/>
   <pattern input="([क-ह]़?)a" replacement="$1ा"/>
   <pattern input="([क-ह]़?)्i" replacement="$1ि"/>

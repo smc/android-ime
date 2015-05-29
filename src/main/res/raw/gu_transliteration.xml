@@ -52,6 +52,7 @@
   <pattern input="ચ્h" replacement="છ્"/>
   <pattern input="જ્h" replacement="ઝ્"/>
   <pattern input="જ્n" replacement="જ્ઞ્"/>
+  <pattern input="ગ્n" replacement="જ્ઞ્"/>
   <pattern input="ન્j" replacement="ઞ્"/>
   <pattern input="ટ્h" replacement="ઠ્"/>
   <pattern input="ડ્h" replacement="ઢ્"/>

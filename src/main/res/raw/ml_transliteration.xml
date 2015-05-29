@@ -123,6 +123,7 @@
   <pattern input="ൻy" replacement="ന്യ്"/>
   <pattern input="ർ\\\\" replacement="ര്‍"/>
   <pattern input="ർ~" replacement="ര്"/>
+  <pattern input="ർ#" replacement="ൎ"/>
   <pattern input="ർr" replacement="റ്"/>
   <pattern input="ർR" replacement="രൃ"/>
   <pattern input="ർy" replacement="ര്യ്"/>
@@ -303,7 +304,7 @@
   <pattern input="(([ൺ-ൿം])‌+)?y" replacement="$2യ്"/>
   <pattern input="(([ൺ-ൿം])‌+)?~" replacement="$2്"/>
   <pattern input="(‌)*_" replacement="‌"/>
-  <pattern input="//" replacement="ऽ"/>
+  <pattern input="//" replacement="ഽ"/>
   <pattern input="1/4\\" replacement="൳"/>
   <pattern input="1/2\\" replacement="൴"/>
   <pattern input="3/4\\" replacement="൵"/>

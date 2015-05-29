@@ -14,12 +14,12 @@
   <pattern input="([क-ह]़?)्ळ्l" replacement="$1ॢ"/>
   <pattern input="([क-ह]़?)ॢl" replacement="$1ॣ"/>
   <pattern input="([क-ह]़?)ॆ\^" replacement="$1ॅ"/>
-  <pattern input="([क-ह]़?)्e" replacement="$1ॆ"/>
-  <pattern input="([क-ह]़?)्E" replacement="$1े"/>
+  <pattern input="([क-ह]़?)्e" replacement="$1े"/>
+  <pattern input="([क-ह]़?)्E" replacement="$1ॅ"/>
   <pattern input="([क-ह]़?)ॊ\^" replacement="$1ॉ"/>
   <pattern input="([क-ह]़?)i" replacement="$1ै"/>
-  <pattern input="([क-ह]़?)्o" replacement="$1ॊ"/>
-  <pattern input="([क-ह]़?)्O" replacement="$1ो"/>
+  <pattern input="([क-ह]़?)्o" replacement="$1ो"/>
+  <pattern input="([क-ह]़?)्O" replacement="$1ॉ"/>
   <pattern input="([क-ह]़?)u" replacement="$1ौ"/>
   <pattern input="([क-ह]़?)ृa" replacement="$1्ऱ"/>
   <pattern input="([क-ह]़?)ृA" replacement="$1्ऱा"/>
@@ -28,10 +28,10 @@
   <pattern input="([क-ह]़?)ृu" replacement="$1्ऱु"/>
   <pattern input="([क-ह]़?)ृU" replacement="$1्ऱू"/>
   <pattern input="([क-ह]़?)ृ\^" replacement="$1्ऱॅ"/>
-  <pattern input="([क-ह]़?)ृe" replacement="$1्ऱॆ"/>
-  <pattern input="([क-ह]़?)ृE" replacement="$1्ऱे"/>
-  <pattern input="([क-ह]़?)ृo" replacement="$1्ऱॊ"/>
-  <pattern input="([क-ह]़?)ृO" replacement="$1्ऱो"/>
+  <pattern input="([क-ह]़?)ृe" replacement="$1्ऱे"/>
+  <pattern input="([क-ह]़?)ृE" replacement="1्ऱॅ"/>
+  <pattern input="([क-ह]़?)ृo" replacement="$1्ऱो"/>
+  <pattern input="([क-ह]़?)ृO" replacement="$1्ऱौ"/>
   <pattern input="([क-ह]़?)ृ\~" replacement="$1्ऱ्"/>
   <pattern input="([क-ह])्\`" replacement="$1़्"/>
   <pattern input="अa" replacement="आ"/>
@@ -67,10 +67,10 @@
   <pattern input="ऋu" replacement="ऱु"/>
   <pattern input="ऋU" replacement="ऱू"/>
   <pattern input="ऋ\^" replacement="ऱॅ"/>
-  <pattern input="ऋe" replacement="ऱॆ"/>
-  <pattern input="ऋE" replacement="ऱे"/>
-  <pattern input="ऋo" replacement="ऱॊ"/>
-  <pattern input="ऋO" replacement="ऱो"/>
+  <pattern input="ऋe" replacement="ऱे"/>
+  <pattern input="ऋE" replacement="ऱै"/>
+  <pattern input="ऋo" replacement="ऱो"/>
+  <pattern input="ऋO" replacement="ऱौ"/>
   <pattern input="ऋ\~" replacement="ऱ्"/>
   <pattern input="स्h" replacement="ष्"/>
   <pattern input="क़्h" replacement="ख़्"/>
@@ -80,7 +80,7 @@
   <pattern input="b" replacement="ब्"/>
   <pattern input="c" replacement="क्"/>
   <pattern input="d" replacement="द्"/>
-  <pattern input="e" replacement="ऎ"/>
+  <pattern input="e" replacement="ए"/>
   <pattern input="(f|F)" replacement="फ़्"/>
   <pattern input="g" replacement="ग्"/>
   <pattern input="h" replacement="ह्"/>
@@ -90,7 +90,7 @@
   <pattern input="l" replacement="ल्"/>
   <pattern input="m" replacement="म्"/>
   <pattern input="n" replacement="न्"/>
-  <pattern input="o" replacement="ऒ"/>
+  <pattern input="o" replacement="ओ"/>
   <pattern input="p" replacement="प्"/>
   <pattern input="q" replacement="क़्"/>
   <pattern input="r" replacement="र्"/>
@@ -105,7 +105,7 @@
   <pattern input="B" replacement="ब्ब्"/>
   <pattern input="C" replacement="क्क्"/>
   <pattern input="D" replacement="ड्"/>
-  <pattern input="E" replacement="ए"/>
+  <pattern input="E" replacement="ऍ"/>
   <pattern input="G" replacement="ग्ग्"/>
   <pattern input="H" replacement="ः"/>
   <pattern input="I" replacement="ई"/>
@@ -114,7 +114,7 @@
   <pattern input="L" replacement="ळ्"/>
   <pattern input="M" replacement="ं"/>
   <pattern input="N" replacement="ण्"/>
-  <pattern input="O" replacement="ओ"/>
+  <pattern input="O" replacement="ऑ"/>
   <pattern input="P" replacement="प्प्"/>
   <pattern input="R" replacement="ऋ"/>
   <pattern input="S" replacement="श्"/>
