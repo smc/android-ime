@@ -192,7 +192,7 @@ function processRules( rules ) {
         }
     } );
 
-    var outputFile = path.join( outputPath, attrs.filename );
+    var outputFile = path.join( outputPath, attrs.filename.replace('-', '_'));
     var xmlStr = xml.end( { pretty: true } );
 
     fs.writeFile( outputFile, xmlStr, function( err ) {
