@@ -20,7 +20,6 @@
   <pattern input="([ക-ഹ])്R" replacement="$1ൃ"/>
   <pattern input="ന്ന്j" replacement="ഞ്ഞ്"/>
   <pattern input="ന്ന്g" replacement="ങ്ങ്"/>
-  <pattern input="ട്ട്h" replacement="ത്ത്"/>
   <pattern input="റ്റ്h" replacement="ത്"/>
   <pattern input="റ്റ്t" replacement="ട്ട്"/>
   <pattern input="ന്റ്h" replacement="ന്ത്"/>
