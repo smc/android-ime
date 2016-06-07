@@ -306,6 +306,7 @@ public class InputMethod {
         put("hi-inscript", R.raw.hi_inscript);
         put("hi-phonetic", R.raw.hi_phonetic);
         put("hi-transliteration", R.raw.hi_transliteration);
+        put("hi-soni", R.raw.hi_soni);
         put("hr-kbd", R.raw.hr_kbd);
         put("hy-kbd", R.raw.hy_kbd);
         put("ipa-sil", R.raw.ipa_sil);

@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<inputmethod id="hi-soni" name="हिन्दी - Soni" description="Soni Phonetic Transliteration based input method for Hindi" author="Arushi Dogra" version="1.0" contextLength="2" maxKeyLength="4">
+  <pattern input="1" replacement="१"/>
+  <pattern input="2" replacement="२"/>
+  <pattern input="3" replacement="३"/>
+  <pattern input="4" replacement="४"/>
+  <pattern input="5" replacement="५"/>
+  <pattern input="6" replacement="६"/>
+  <pattern input="7" replacement="७"/>
+  <pattern input="8" replacement="८"/>
+  <pattern input="9" replacement="९"/>
+  <pattern input="0" replacement="०"/>
+  <pattern input="." replacement="."/>
+  <pattern input="/" replacement="/"/>
+  <pattern input="*" replacement="*"/>
+  <pattern input="+" replacement="+"/>
+  <pattern input="-" replacement="-"/>
+
+  <pattern input="k" replacement="क"/>
+  <pattern input="kh" replacement="ख"/>
+  <pattern input="g" replacement="ग"/>
+  <pattern input="gh" replacement="घ"/>
+  <pattern input="ch" replacement="च"/>
+  <pattern input="chh" replacement="छ"/>
+  <pattern input="j" replacement="ज"/>
+  <pattern input="jh" replacement="झ"/>
+  <pattern input="T" replacement="ट"/>
+  <pattern input="Th" replacement="ठ"/>
+  <pattern input="D" replacement="ड"/>
+  <pattern input="Dh" replacement="ढ"/>
+  <pattern input="N" replacement="ण"/>
+  <pattern input="t" replacement="त"/>
+  <pattern input="th" replacement="थ"/>
+  <pattern input="d" replacement="द"/>
+  <pattern input="dh" replacement="ध"/>
+  <pattern input="n" replacement="न"/>
+  <pattern input="p" replacement="प"/>
+  <pattern input="ph" replacement="फ"/>
+  <pattern input="b" replacement="ब"/>
+  <pattern input="bh" replacement="भ"/>
+  <pattern input="m" replacement="म"/>
+  <pattern input="y" replacement="य"/>
+  <pattern input="r" replacement="र"/>
+  <pattern input="l" replacement="ल"/>
+  <pattern input="L" replacement="ळ"/>
+  <pattern input="v" replacement="व"/>
+  <pattern input="h" replacement="ह"/>
+  <pattern input="H" replacement="ह"/>
+  <pattern input="s" replacement="स"/>
+  <pattern input="sh" replacement="श"/>
+  <pattern input="Sh" replacement="ष"/>
+
+  <pattern input=" a" replacement=" अ"/>
+  <pattern input=" aa" replacement=" आ"/>
+  <pattern input=" e" replacement=" इ"/>
+  <pattern input=" ee" replacement=" ई"/>
+  <pattern input=" u" replacement=" उ"/>
+  <pattern input=" uu" replacement=" ऊ"/>
+  <pattern input=" i" replacement=" ए"/>
+  <pattern input=" ai" replacement=" ऐ"/>
+  <pattern input=" o" replacement=" ओ"/>
+  <pattern input=" au" replacement=" औ"/>
+ 
+  <pattern input="A" replacement=" अ"/>
+  <pattern input="AA" replacement=" आ"/>
+  <pattern input="E" replacement=" इ"/>
+  <pattern input="EE" replacement=" ई"/>
+  <pattern input="U" replacement=" उ"/>
+  <pattern input="UU" replacement=" ऊ"/>
+  <pattern input="I" replacement=" ए"/>
+  <pattern input="AI" replacement=" ऐ"/>
+  <pattern input="O" replacement=" ओ"/>
+  <pattern input="Au" replacement=" औ"/>
+
+  <pattern input="q" replacement="ऍ"/>
+  <pattern input="qq" replacement="ऎ"/>
+  <pattern input="qqq" replacement="ऑ"/>
+  <pattern input="qqqq" replacement="ऒ"/>
+
+
+  <pattern input="w" replacement="ॅ"/>
+  <pattern input="ww" replacement="ॆ"/>
+  <pattern input="www" replacement="ॉ"/>
+  <pattern input="wwww" replacement="ॊ"/>
+
+  <pattern input="KSH" replacement ="क्ष"/>
+  <pattern input="TR" replacement ="त्र"/>
+  <pattern input=  "GY" replacement ="ज्ञ"/>
+  <pattern input= "OM"replacement = "ॐ"/>
+  <pattern input= "RS"replacement = "₹"/>
+  <pattern input= "Q" replacement ="ऽ"/>
+    
+
+  <pattern input="z" replacement="क्ष"/>
+  <pattern input="zz" replacement ="त्र"/>
+  <pattern input="zzz" replacement ="ज्ञ"/>
+  <pattern input="zzzz" replacement ="श्र"/>
+  <pattern input ="zzzzz" replacement ="ऋ"/>
+  <pattern input="zzzzzz" replacement ="ॠ"/>
+
+  <pattern input ="x" replacement ="ङ"/>
+  <pattern input="xx" replacement ="ञ"/>
+
+
+
+  <pattern input="a" replacement ="ा"/>
+  <pattern input="i" replacement ="ि"/>
+  <pattern input="ii" replacement ="ी"/>
+  <pattern input="u" replacement ="ु"/>
+  <pattern input="oo"replacement = "ू"/>
+  <pattern input="e" replacement ="े"/>
+  <pattern input="ai" replacement ="ै"/>
+  <pattern input="o" replacement ="ो"/>
+  <pattern input="au" replacement ="ौ"/>
+  <pattern input="*" replacement ="ं"/>
+  <pattern input=":" replacement ="ः"/>
+  <pattern input="f" replacement ="्‌"/>	
+  <pattern input="\\" replacement ="्‌"/>
+  <pattern input="/" replacement ="्र"/>
+  <pattern input="^" replacement ="र्"/>
+  <pattern input="<" replacement ="ृ"/>
+  <pattern input="<<" replacement ="ॄ"/>
+  <pattern input="." replacement ="़"/>
+  <pattern input="|" replacement ="।"/>
+  <pattern input="@" replacement ="ँ"/>
+</inputmethod>
