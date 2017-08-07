@@ -76,6 +76,7 @@
   <pattern input="ട്h" replacement="ഠ്"/>
   <pattern input="ഡ്h" replacement="ഢ്"/>
   <pattern input="ത്h" replacement="ഥ്"/>
+  <pattern input="ഠ്h" replacement="ഥ്"/>
   <pattern input="ദ്h" replacement="ധ്"/>
   <pattern input="പ്h" replacement="ഫ്"/>
   <pattern input="ബ്h" replacement="ഭ്"/>
