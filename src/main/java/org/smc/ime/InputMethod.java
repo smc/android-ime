@@ -379,5 +379,6 @@ public class InputMethod {
         put("ug-kbd", R.raw.ug_kbd);
         put("ur-transliteration", R.raw.ur_transliteration);
         put("uz-kbd", R.raw.uz_kbd);
+	put("soni-phonetic", R.raw.soni_phonetic);
     }};
 }    
