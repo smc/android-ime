@@ -42,7 +42,7 @@
   <pattern input="নc" context="[^o`]" replacement="ঞ্চ"/>
   <pattern input="ত`" context="`" replacement="ৎ"/>
   <pattern input="ক্ক(h|H)" context="[^o`]" replacement="ক্ষ"/>
-  <pattern input="কশ(h|H)" context="[^o`]" replacement="ক্ষ"/>
+  <pattern input="ক্শ(h|H)" context="[^o`]" replacement="ক্ষ"/>
   <pattern input="ররk" context="(o|a|i|I|u|U|e|O|OI|OU|rri)rr" replacement="র্ক"/>
   <pattern input="ররg" context="(o|a|i|I|u|U|e|O|OI|OU|rri)rr" replacement="র্গ"/>
   <pattern input="ররc" context="(o|a|i|I|u|U|e|O|OI|OU|rri)rr" replacement="র্চ"/>
