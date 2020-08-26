@@ -1,64 +1,71 @@
 <?xml version="1.0"?>
-<inputmethod id="ur-transliteration" name="Urdu Transliteration" description="Urdu Transliteration based on RTS" author="Mohammed Imran Tabani" version="1.0" contextLength="0" maxKeyLength="1">
-  <pattern input="x" replacement="ف"/>
+<inputmethod id="ur-transliteration" name="Urdu Transliteration" description="Urdu Transliteration" author="Dadpure M M" version="1.0" contextLength="0" maxKeyLength="1">
+  <pattern input="x" replacement="ژ"/>
+  <pattern input="X" replacement="ض"/>
   <pattern input="_" replacement="_"/>
-  <pattern input="D" replacement="ڑ"/>
-  <pattern input="E" replacement="ذ"/>
-  <pattern input="F" replacement="ں"/>
-  <pattern input="R" replacement="ڈ"/>
-  <pattern input="G" replacement="ۂ"/>
-  <pattern input="T" replacement="ث"/>
+  <pattern input="D" replacement="ڈ"/>
+  <pattern input="E" replacement="ئ"/>
+  <pattern input="F" replacement="ف"/>
+  <pattern input="R" replacement="ڑ"/>
+  <pattern input="r" replacement="ر"/>
+  <pattern input="G" replacement="غ"/>
+  <pattern input="T" replacement="ٹ"/>
   <pattern input="\+" replacement="+"/>
-  <pattern input="S" replacement="ز"/>
-  <pattern input="W" replacement="ض"/>
-  <pattern input="A" replacement="ژ"/>
-  <pattern input="Q" replacement="ظ"/>
+  <pattern input="S" replacement="ش"/>
+  <pattern input="w" replacement="و"/>
+  <pattern input="W" replacement="ؤ"/>
+  <pattern input="A" replacement="آ"/>
+  <pattern input="Q" replacement="اللّٰه"/>
   <pattern input="k" replacement="ک"/>
-  <pattern input="K" replacement="گ"/>
-  <pattern input="i" replacement="ب"/>
-  <pattern input="I" replacement="ـ"/>
-  <pattern input="U" replacement="ۃ"/>
+  <pattern input="K" replacement="خ"/>
+  <pattern input="i" replacement="إ"/>
+  <pattern input="I" replacement="ع"/>
+  <pattern input="U" replacement="،"/>
   <pattern input="\;" replacement="؛"/>
   <pattern input="\:" replacement=":"/>
-  <pattern input="p" replacement="ح"/>
-  <pattern input="P" replacement="خ"/>
+  <pattern input="p" replacement="پ"/>
+  <pattern input="P" replacement="ث"/>
   <pattern input="\}" replacement="{"/>
   <pattern input="&apos;" replacement="&apos;"/>
   <pattern input="&quot;" replacement="&quot;"/>
   <pattern input="\[" replacement="]"/>
   <pattern input="\{" replacement="{"/>
-  <pattern input="C" replacement="ۓ"/>
-  <pattern input="l" replacement="ی"/>
-  <pattern input="L" replacement="ي"/>
-  <pattern input="o" replacement="ج"/>
-  <pattern input="O" replacement="چ"/>
-  <pattern input="v" replacement="س"/>
-  <pattern input="h" replacement="ہ"/>
-  <pattern input="H" replacement="ء"/>
-  <pattern input="y" replacement="پ"/>
-  <pattern input="Y" replacement="ّ­"/>
-  <pattern input="c" replacement="ے"/>
+  <pattern input="c" replacement="ص"/>
+  <pattern input="C" replacement="ض"/>
+  <pattern input="l" replacement="ل"/>
+  <pattern input="L" replacement="لا"/>
+  <pattern input="o" replacement="ہ"/>
+  <pattern input="O" replacement="ۃ"/>
+  <pattern input="v" replacement="ط"/>
+  <pattern input="V" replacement="ظ"/>
+  <pattern input="h" replacement="ھ"/>
+  <pattern input="H" replacement="ح"/>
+  <pattern input="y" replacement="ي"/>
+  <pattern input="Y" replacement="ی"/>
   <pattern input="\?" replacement="؟"/>
-  <pattern input="j" replacement="ا"/>
-  <pattern input="n" replacement="غ"/>
-  <pattern input="N" replacement="ئ"/>
-  <pattern input="b" replacement="ش"/>
+  <pattern input="j" replacement="ج"/>
+  <pattern input="J" replacement="چ"/>
+  <pattern input="n" replacement="ن"/>
+  <pattern input="N" replacement="ں"/>
+  <pattern input="b" replacement="ب"/>
+  <pattern input="B" replacement="﷽"/>
   <pattern input="\&lt;" context="" replacement="&gt;"/>
-  <pattern input="m" replacement="ع"/>
-  <pattern input="u" replacement="ت"/>
+  <pattern input="m" replacement="م"/>
+  <pattern input="M" replacement="ؐ"/>
+  <pattern input="u" replacement="ء"/>
   <pattern input="\]" context="" replacement="["/>
-  <pattern input="e" replacement="ھ"/>
-  <pattern input="f" replacement="ن"/>
-  <pattern input="r" replacement="د"/>
-  <pattern input="g" replacement="ل"/>
-  <pattern input="t" replacement="ٹ"/>
+  <pattern input="e" replacement="ے"/>
+  <pattern input="f" replacement="ف"/>
+  <pattern input="g" replacement="گ"/>
+  <pattern input="t" replacement="ت"/>
   <pattern input="\=" context="" replacement="="/>
   <pattern input="\\" replacement="\"/>
-  <pattern input="s" replacement="و"/>
-  <pattern input="w" replacement="ص"/>
-  <pattern input="a" replacement="م"/>
-  <pattern input="q" replacement="ط"/>
-  <pattern input="d" replacement="ر"/>
+  <pattern input="s" replacement="س"/>
+  <pattern input="a" replacement="ا"/>
+  <pattern input="q" replacement="ق"/>
+  <pattern input="d" replacement="د"/>
+  <pattern input="z" replacement="ز"/>
+  <pattern input="Z" replacement="ذ"/>
   <pattern input="\|" replacement="|"/>
   <pattern input="/" replacement="/"/>
   <pattern input="\&gt;" replacement="&lt;"/>
