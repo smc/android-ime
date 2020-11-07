@@ -21,7 +21,7 @@ import org.xml.sax.SAXException;
 
 
 public class InputMethod {
-    static class InputPattern {
+    public static class InputPattern {
         private Pattern inputPattern;
         private Pattern contextPattern;
         private String replacement;
