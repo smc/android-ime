@@ -255,6 +255,9 @@
   <pattern input="ഌ\\" replacement="ൢ"/>
   <pattern input="ൡ\\" replacement="ൣ"/>
 
+  <pattern input="@u" replacement="ു"/>
+  <pattern input="@U" replacement="ൂ"/>
+
   <pattern input="(([ൺ-ൿം])‌+)?A" replacement="$2ആ"/>
   <pattern input="(([ൺ-ൿം])‌+)?B" replacement="$2ബ്ബ്"/>
   <pattern input="(([ൺ-ൿം])‌+)?C" replacement="$2ച്ച്"/>
