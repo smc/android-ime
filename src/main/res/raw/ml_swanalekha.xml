@@ -226,16 +226,16 @@
   <pattern input="([ക-ഹ])u" replacement="$1ൗ"/>
   <pattern input="([ക-ഹ])U" replacement="$1ൌ"/>
   <pattern input="([അ-്])m" replacement="$1മ്"/>
-  <pattern input="\\0" replacement="൦"/>
-  <pattern input="\\1" replacement="൧"/>
-  <pattern input="\\2" replacement="൨"/>
-  <pattern input="\\3" replacement="൩"/>
-  <pattern input="\\4" replacement="൪"/>
-  <pattern input="\\5" replacement="൫"/>
-  <pattern input="\\6" replacement="൬"/>
-  <pattern input="\\7" replacement="൭"/>
-  <pattern input="\\8" replacement="൮"/>
-  <pattern input="\\9" replacement="൯"/>
+  <pattern input="@0" replacement="൦"/>
+  <pattern input="@1" replacement="൧"/>
+  <pattern input="@2" replacement="൨"/>
+  <pattern input="@3" replacement="൩"/>
+  <pattern input="@4" replacement="൪"/>
+  <pattern input="@5" replacement="൫"/>
+  <pattern input="@6" replacement="൬"/>
+  <pattern input="@7" replacement="൭"/>
+  <pattern input="@8" replacement="൮"/>
+  <pattern input="@9" replacement="൯"/>
   <pattern input="മ്\\" replacement="ം"/>
   <pattern input="ആ\\" replacement="ാ"/>
   <pattern input="ഇ\\" replacement="ി"/>
