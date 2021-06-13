@@ -258,6 +258,11 @@
   <pattern input="@u" replacement="ു"/>
   <pattern input="@U" replacement="ൂ"/>
 
+  <pattern input="ക്~" replacement="ൿ"/>
+  <pattern input="മ്~" replacement="ൔ"/>
+  <pattern input="യ്[~\_]" replacement="ൕ"/>
+  <pattern input="ഴ്~" replacement="ൖ"/>
+
   <pattern input="(([ൺ-ൿം])‌+)?A" replacement="$2ആ"/>
   <pattern input="(([ൺ-ൿം])‌+)?B" replacement="$2ബ്ബ്"/>
   <pattern input="(([ൺ-ൿം])‌+)?C" replacement="$2ച്ച്"/>
