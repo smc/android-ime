@@ -12,7 +12,7 @@ buildscript {
 
 android {
     compileSdkVersion 25
-
+    namespace 'org.smc.ime'
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
